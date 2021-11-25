@@ -1,0 +1,9 @@
+<mat-list role="list" >
+
+      <mat-card role="listitem" class="list-item" *ngFor="let user of listUsers">
+       {{user.name}}     <a class="userDistance"  id="afstand" [routerLink]="['/users/edit' , user.id]" routerLinkActive="router-link-active" > <span> | </span>Edit </a>
+            <a class="userDistance" [routerLink]="['/users/delete' , user.id]" routerLinkActive="router-link-active" ><span> | </span> Delete </a>
+            <a class="userDistance" [routerLink]="['/users/view' , user.id]" routerLinkActive="router-link-active" > <span> | </span>View </a>
+
+      </mat-card>
+</mat-list>
