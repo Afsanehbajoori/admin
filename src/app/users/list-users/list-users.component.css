@@ -1,5 +1,6 @@
 .userDistance{
-  margin-left: 10px;
+
+  margin: 10px;
   }
 
 
@@ -8,5 +9,7 @@
 }
 
 #afstand{
-  margin-left: 100px;
+
+  margin-left: 5px;
+  margin-top: 20px;
 }
