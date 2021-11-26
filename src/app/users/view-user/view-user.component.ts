@@ -18,7 +18,8 @@ export class ViewUserComponent implements OnInit {
   ngOnInit(): void {
 
     this.activatedRoute.paramMap.subscribe(data => {this.userId = data.get('id');
-   console.log(this.userId);})
+                                                    console.log(this.userId);})
+
     this.userService.viewUser(this.userId).subscribe(data => {console.log(data);
     this.listView=data;})
 

@@ -8,6 +8,12 @@ import { DeleteUserComponent } from './delete-user/delete-user.component';
 import {MatListModule} from '@angular/material/list';
 import { RouterModule } from '@angular/router';
 import {MatCardModule} from '@angular/material/card';
+import {MatInputModule} from '@angular/material/input';
+import {MatIconModule} from '@angular/material/icon';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { ReactiveFormsModule } from '@angular/forms';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+
 
 
 
@@ -22,10 +28,18 @@ import {MatCardModule} from '@angular/material/card';
     DeleteUserComponent
   ],
   imports: [
+
     CommonModule,
     MatListModule,
     MatCardModule,
-    RouterModule
+    RouterModule,
+    MatInputModule,
+    MatIconModule,
+    MatFormFieldModule,
+    ReactiveFormsModule,
+    MatSnackBarModule
+
+
 
   ]
 })
