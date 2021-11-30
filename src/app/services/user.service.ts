@@ -1,5 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { User } from '../users/list-users/list-users.component';
+import { observable } from 'rxjs';
+
 
 
 @Injectable({
@@ -11,7 +14,7 @@ export class UserService {
   constructor(private http:HttpClient) {}
 
     ListUsers(){
-      return this.http.get(this.baseUrl + 'users')
+      return this.http.get<User[]>(this.baseUrl + 'users')
     }
 
     viewUser(id:string){
