@@ -15,7 +15,8 @@ const routes: Routes = [
     {path: 'list' , component:ListUsersComponent},
     {path: 'delete/:id' , component:DeleteUserComponent},
     {path: 'edit/:id' , component:EditUserComponent}
-  ]}
+  ]},
+  { path: 'roles', loadChildren: () => import('./roles/roles.module').then(m => m.RolesModule) }
 
 ];
 
